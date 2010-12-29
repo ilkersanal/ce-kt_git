@@ -6,6 +6,8 @@ private String uuid;
 
 private String name;
 
+private String comment;
+
 	public DomainObject() {
 		super();
 	}
@@ -20,8 +22,15 @@ private String name;
 
 	public String getUuId() {
 		return id;
+	}
+
+	public String getComment(){
+		return comment;
 	}	
 
+	public String setComment(String comment){
+		this.comment = comment;
+	}	
 	public String id = UUID.randomUUID().toString()
 
 }
