@@ -14,10 +14,12 @@ private String comment;
 	/**
 	* Default constructor
 	*/
-	public DomainObject(String id){
+	public DomainObject(String name, String comment, String id){
 	
 		super();
 		this.id = id;
+		this.name = name;
+		this.comment = comment;
 	}
 
 	public String getUuId() {
