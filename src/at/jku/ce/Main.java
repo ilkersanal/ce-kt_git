@@ -6,7 +6,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Set<DomainObject> objectSet = new HashSet<DomainObject>();
+		Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 		
 		objectSet.add(DomainFactory.createDomainObject("Helga", "Mutter"));
 		objectSet.add(DomainFactory.createDomainObject("Walter", "Vater"));
@@ -15,7 +15,8 @@ public class Main {
 		objectSet.add(DomainFactory.createDomainObject("Claudia", "Tochter2"));
 		
 		for (DomainObject domainObject : objectSet) {
-			LOGGER.debug(domainObject.getUuid);
+			LOGGER.debug(domainObject.getUuid());
+			LOGGER.debug(domainObject.toString());
 		}		
 	}
 
