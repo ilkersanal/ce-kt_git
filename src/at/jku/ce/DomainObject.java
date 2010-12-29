@@ -30,7 +30,7 @@ private String comment;
 		return comment;
 	}	
 
-	public String setComment(String comment){
+	public String setComment(final String comment){
 		this.comment = comment;
 	}	
 
@@ -39,7 +39,7 @@ private String comment;
 		return name;
 	}
 
-	public void setName(String name){
+	public void setName(final String name){
 		
 		this.name = name;
 	}
