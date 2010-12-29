@@ -43,7 +43,10 @@ private String comment;
 		
 		this.name = name;
 	}
-
+	public String toString() {
+		return "DomainObject [name=" + name + ", comment=" +comment + ", uuid=" +uuid + "]";
+		]";
+	}
 	public String id = UUID.randomUUID().toString()
 
 }
