@@ -6,6 +6,7 @@ public String id;
 
 private String name;
 
+
 	public DomainObject() {
 		super();
 	}
@@ -21,5 +22,7 @@ private String name;
 	public String getId() {
 		return id;
 	}	
+
+	public String id = UUID.randomUUID().toString()
 
 }
