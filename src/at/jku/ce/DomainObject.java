@@ -7,7 +7,9 @@ public String id;
 	public DomainObject() {
 		super();
 	}
-
+	/**
+	* Default constructor
+	*/
 	public DomainObject(String id){
 	
 		super();
